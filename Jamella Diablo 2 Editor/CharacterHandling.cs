@@ -214,6 +214,7 @@ namespace Jamella_Diablo_2_Editor
                     for (int i = 0; i < strs.Length; i++) strs[i] = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(strs[i]);
                     skilldesc = string.Join("\n", strs);
                 }
+                skilldesc = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(skilldesc);
                 int skillPage = Convert.ToInt32(dr["SkillPage"].Value);
                 PictureBox? pb = null;
                 TextBox? txt = null;
