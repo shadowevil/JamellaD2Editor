@@ -178,7 +178,7 @@ namespace Jamella_Diablo_2_Editor
             if (Character.Status.IsHardcore)
             {
                 GetControl<ComboBox>("tabStats", "cboProgression").Items.Clear();
-                GetControl<ComboSBox>("tabStats", "cboProgression").Items.AddRange(new string[] {
+                GetControl<ComboBox>("tabStats", "cboProgression").Items.AddRange(new string[] {
                     "None",
                     "Destroyer (Normal completed)",
                     "Conqueror (Nightmare completed)",
